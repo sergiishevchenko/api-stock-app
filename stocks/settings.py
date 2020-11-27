@@ -72,6 +72,7 @@ DATABASES = {
         'NAME': 'stocks_db',
         'USER': 'postgres',
         'PASSWORD': 'pythondeveloper2019',
+        'PORT': '5432'
     }
 }
 
