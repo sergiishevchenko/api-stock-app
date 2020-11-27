@@ -16,7 +16,7 @@ SECRET_KEY = '@j%s!azv5w)*b^rq9(h*utoz7hu4u_phah&hj)@#t13ric41a*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://api-stock-app.herokuapp.com/']
 
 
 # Application definition
