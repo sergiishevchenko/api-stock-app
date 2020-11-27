@@ -73,7 +73,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'pythondeveloper2019',
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': '5433'
     }
 }
 
