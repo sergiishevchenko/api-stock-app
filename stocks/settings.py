@@ -72,16 +72,11 @@ DATABASES = {
         'NAME': 'stocks_db',
         'USER': 'postgres',
         'PASSWORD': 'pythondeveloper2019',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
     }
 }
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
-}
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
