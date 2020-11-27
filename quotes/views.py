@@ -39,4 +39,7 @@ def add_stock(request):
         return render(request, 'add_stock.html', {'ticker': ticker})
 
 def delete(request, stock_id):
-    return render(request, 'delete.html', {})
+    item = Stock.objects.get(id=stock_id)
+    item.delete()
+    messages.success(request, ('Stock Has Been Deleted!'))
+    return redirect('add_stock')
